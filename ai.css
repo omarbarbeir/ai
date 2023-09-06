@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Creepster&family=Fredericka+the+Great&family=Lilita+One&display=swap');
+
+
+
+#container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#container h1{
+    font-family: 'Lilita One', cursive;
+}
+#container p{
+    font-family: 'Lilita One', cursive;
+}
+#btn{
+    font-family: 'Lilita One', cursive;
+}
+#container input{
+    border:1px solid black;
+    font-family: 'Lilita One', cursive;
+}
+#loading{
+    font-family: 'Lilita One', cursive;
+    display: none;
+}
+
+#btn:disabled, #btn[disabled]{
+    border:1px solid #999;
+    background: #ccc;
+    color:#686;
+    cursor: auto;
+}
+
+
+.result{
+    margin-top: 10px;
+    width:100%;
+    padding:10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:15px;
+    margin-bottom: 5px;
+    max-width: 80%;
+}
+
+#img-grid img{
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    border:1px solid transparent;
+    box-shadow: 0 0 3px darkcyan;
+    transition:  all 0.3s ease;
+}
